@@ -4,11 +4,8 @@ EfficientNetB0 + Transfer Learning + Fine-Tuning
 Este repositório contém um projeto completo de classificação de imagens meteorológicas, utilizando Deep Learning com Transfer Learning e fine-tuning parcial. O objetivo é identificar automaticamente condições climáticas em imagens externas, classificando-as em:
 
 ☁️ Cloudy (Nublado)
-
 🌞 Sunny (Ensolarado)
-
 🌧️ Rain (Chuvoso)
-
 🌅 Sunrise (Nascer do Sol)
 
 O projeto foi desenvolvido em Python utilizando TensorFlow/Keras, com foco em execução no Google Colab.
@@ -17,59 +14,39 @@ O projeto foi desenvolvido em Python utilizando TensorFlow/Keras, com foco em ex
 
 A classificação automática de condições meteorológicas a partir de imagens é extremamente útil em:
 
-Monitoramento de tráfego
-
-Sistemas de planejamento urbano
-
-Previsão meteorológica assistida
-
-Automação industrial
-
-Veículos autônomos
+- Monitoramento de tráfego
+- Sistemas de planejamento urbano
+- Previsão meteorológica assistida
+- Automação industrial
+- Veículos autônomos
 
 Para realizar a tarefa, empregamos:
 
-Transfer Learning com EfficientNetB0
-
-Data augmentation para ampliar robustez
-
-Treinamento híbrido (feature extraction → fine-tuning)
-
-Métricas profissionais (train/val/test)
-
-A arquitetura EfficientNetB0 foi escolhida por fornecer o melhor equilíbrio entre:
-
-Qualidade de representação visual
-
-Velocidade de inferência
-
-Risco reduzido de overfitting
-
-Baixa complexidade computacional
+- Transfer Learning com EfficientNetB0
+- Data augmentation para ampliar robustez
+- Treinamento híbrido (feature extraction → fine-tuning)
+- Métricas profissionais (train/val/test)
+- A arquitetura EfficientNetB0 foi escolhida por fornecer o melhor equilíbrio entre:
+- Qualidade de representação visual
+- Velocidade de inferência
+- Risco reduzido de overfitting
+- Baixa complexidade computacional
 
 🎯 2. Objetivo
 
 Construir um modelo capaz de classificar imagens em quatro categorias climáticas utilizando:
-
-TensorFlow / Keras
-
-Transfer Learning
-
-Pipeline de dados otimizado
-
-Treinamento em duas fases
-
-Fine-tuning
+- TensorFlow / Keras
+- Transfer Learning
+- Pipeline de dados otimizado
+- Treinamento em duas fases
+- Fine-tuning
 
 📦 3. Dataset
 
 📁 Nome: Multi-class Weather Dataset
-
 🔗 Download: (via Google Drive)
 https://drive.google.com/file/d/10eg72mzwrhK0b5RDEqBg1XgOVWwZ8WTA/view
-
 🏷️ Classes: Cloudy, Rain, Sunny, Sunrise
-
 📸 Tamanho: ~1100 imagens
 
 🗂️ Estrutura dos diretórios:
@@ -84,14 +61,11 @@ Multi-class Weather Dataset/
 ▶️ Execução no Google Colab (recomendado)
 
 Abra o notebook.
-
 Ative GPU em: Runtime → Change runtime type → GPU.
-
 Execute as células na ordem.
 
 💻 Execução local
 pip install tensorflow numpy matplotlib seaborn scikit-learn gdown
-
 
 Baixe o dataset manualmente e ajuste os caminhos, se necessário.
 
@@ -114,11 +88,8 @@ print("Extração concluída!")
 🧭 6. Carregamento do Dataset (Treino, Validação e Teste)
 
 Divisão utilizada:
-
 70% → Treino
-
 20% → Validação
-
 10% → Teste
 
 import tensorflow as tf
@@ -260,33 +231,20 @@ Resultado: modelo leve, rápido e com excelente acurácia, ideal para aplicaçõ
 
 📚 14. Referências
 Modelos e Deep Learning
-
 Chollet, F. Deep Learning with Python. Manning, 2017.
-
 TensorFlow. Transfer Learning & Fine-Tuning Documentation.
-
 Krizhevsky, A. et al. “ImageNet Classification with Deep CNNs”. NIPS, 2012.
-
 Sandler, M. et al. “MobileNetV2”. Google Research, 2018.
-
 Suporte com IA (prompts utilizados)
-
 Comparação técnica entre arquiteturas (MobileNetV2, ResNet50, EfficientNetB0) para condições climáticas.
-
 Geração de código para carregar dataset zipado via Google Drive.
-
 Código inicial de análise e pipeline de classificação gerado via IA.
 
 📌 15. Possíveis Extensões
 
-Exportação do modelo (model.save("weather_classifier.keras"))
-
-API para inferência (Flask/FastAPI)
-
-Dashboard visual
-
-Testes com EfficientNetB1–B3
-
-Early stopping e checkpoints
-
-Expansão para 10+ classes climáticas
+- Exportação do modelo (model.save("weather_classifier.keras"))
+- API para inferência (Flask/FastAPI)
+- Dashboard visual
+- Testes com EfficientNetB1–B3
+- Early stopping e checkpoints
+- Expansão para 10+ classes climáticas
