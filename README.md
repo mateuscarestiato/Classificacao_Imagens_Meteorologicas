@@ -222,9 +222,13 @@ print(classification_report(y_true, y_pred, target_names=class_names))
 A estratégia adotada se mostrou altamente eficaz, pois:
 
 ✔ Transfer Learning reduz os requisitos de dados
+
 ✔ EfficientNetB0 extrai padrões visuais sofisticados
+
 ✔ Fine-tuning permite especializar o modelo no domínio meteorológico
+
 ✔ Data augmentation reduz overfitting
+
 ✔ Divisão 70/20/10 garante avaliação confiável
 
 Resultado: modelo leve, rápido e com excelente acurácia, ideal para aplicações reais.
